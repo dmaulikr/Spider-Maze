@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22616DF01E32DA070011422B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22616DEF1E32DA070011422B /* AppDelegate.swift */; };
+		22616DF21E32DA070011422B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 22616DF11E32DA070011422B /* GameScene.sks */; };
+		22616DF41E32DA080011422B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 22616DF31E32DA080011422B /* Actions.sks */; };
+		22616DF61E32DA090011422B /* Game.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22616DF51E32DA090011422B /* Game.xcassets */; };
+		22616DF81E32DA0A0011422B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22616DF71E32DA0A0011422B /* GameScene.swift */; };
+		22616DFA1E32DA0A0011422B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22616DF91E32DA0A0011422B /* GameViewController.swift */; };
+		22616DFD1E32DA0B0011422B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22616DFB1E32DA0B0011422B /* Main.storyboard */; };
+		22616DFF1E32DA0E0011422B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22616DFE1E32DA0E0011422B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22616DEC1E32DA070011422B /* Spider Maze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spider Maze.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22616DEF1E32DA070011422B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22616DF11E32DA070011422B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		22616DF31E32DA080011422B /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		22616DF51E32DA090011422B /* Game.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Game.xcassets; sourceTree = "<group>"; };
+		22616DF71E32DA0A0011422B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		22616DF91E32DA0A0011422B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		22616DFC1E32DA0B0011422B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22616DFE1E32DA0E0011422B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22616E001E32DA0E0011422B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22616DE91E32DA070011422B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22616DE31E32DA060011422B = {
+			isa = PBXGroup;
+			children = (
+				22616DEE1E32DA070011422B /* Spider Maze */,
+				22616DED1E32DA070011422B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22616DED1E32DA070011422B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22616DEC1E32DA070011422B /* Spider Maze.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22616DEE1E32DA070011422B /* Spider Maze */ = {
+			isa = PBXGroup;
+			children = (
+				22616DEF1E32DA070011422B /* AppDelegate.swift */,
+				22616DF11E32DA070011422B /* GameScene.sks */,
+				22616DF31E32DA080011422B /* Actions.sks */,
+				22616DF51E32DA090011422B /* Game.xcassets */,
+				22616DF71E32DA0A0011422B /* GameScene.swift */,
+				22616DF91E32DA0A0011422B /* GameViewController.swift */,
+				22616DFB1E32DA0B0011422B /* Main.storyboard */,
+				22616DFE1E32DA0E0011422B /* Assets.xcassets */,
+				22616E001E32DA0E0011422B /* Info.plist */,
+			);
+			path = "Spider Maze";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22616DEB1E32DA070011422B /* Spider Maze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22616E031E32DA0E0011422B /* Build configuration list for PBXNativeTarget "Spider Maze" */;
+			buildPhases = (
+				22616DE81E32DA070011422B /* Sources */,
+				22616DE91E32DA070011422B /* Frameworks */,
+				22616DEA1E32DA070011422B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Spider Maze";
+			productName = "Spider Maze";
+			productReference = 22616DEC1E32DA070011422B /* Spider Maze.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22616DE41E32DA060011422B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Shawn Haynes";
+				TargetAttributes = {
+					22616DEB1E32DA070011422B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DNAE8BTT74;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 22616DE71E32DA060011422B /* Build configuration list for PBXProject "Spider Maze" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22616DE31E32DA060011422B;
+			productRefGroup = 22616DED1E32DA070011422B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22616DEB1E32DA070011422B /* Spider Maze */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22616DEA1E32DA070011422B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22616DF21E32DA070011422B /* GameScene.sks in Resources */,
+				22616DF41E32DA080011422B /* Actions.sks in Resources */,
+				22616DF61E32DA090011422B /* Game.xcassets in Resources */,
+				22616DFD1E32DA0B0011422B /* Main.storyboard in Resources */,
+				22616DFF1E32DA0E0011422B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22616DE81E32DA070011422B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22616DF81E32DA0A0011422B /* GameScene.swift in Sources */,
+				22616DFA1E32DA0A0011422B /* GameViewController.swift in Sources */,
+				22616DF01E32DA070011422B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		22616DFB1E32DA0B0011422B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22616DFC1E32DA0B0011422B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22616E011E32DA0E0011422B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		22616E021E32DA0E0011422B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22616E041E32DA0E0011422B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = DNAE8BTT74;
+				INFOPLIST_FILE = "Spider Maze/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cincystyle.Spider-Maze";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		22616E051E32DA0E0011422B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = DNAE8BTT74;
+				INFOPLIST_FILE = "Spider Maze/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cincystyle.Spider-Maze";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22616DE71E32DA060011422B /* Build configuration list for PBXProject "Spider Maze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22616E011E32DA0E0011422B /* Debug */,
+				22616E021E32DA0E0011422B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22616E031E32DA0E0011422B /* Build configuration list for PBXNativeTarget "Spider Maze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22616E041E32DA0E0011422B /* Debug */,
+				22616E051E32DA0E0011422B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22616DE41E32DA060011422B /* Project object */;
+}
