@@ -11,7 +11,11 @@ import Foundation
 class GameScene: SKScene, SKPhysicsContactDelegate {
   
     var spider : SKSpriteNode = SKSpriteNode(imageNamed: "blackSpider1")
+
+  
+
     
+
     var spiderWalkingFrames : [SKTexture]!
 //    func swipedRight(sender:UISwipeGestureRecognizer){
 //        print("swiped right")
@@ -41,15 +45,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 //                spider.physicsBody?.contactTestBitMask = goalCategory!
 //            }
 //            }
-            let timer = Timer(timeInterval: 3.0, target: self, selector: #selector(self.spawnObstacle(timer:)), userInfo: nil, repeats: true)
+           // let timer = Timer(timeInterval: 3.0, target: self, selector: #selector(self.spawnObstacle(timer:)), userInfo: nil, repeats: true)
           //  RunLoop.main.add(timer, forMode: CFRunLoopMode)
-            RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
-            let camera = SKCameraNode()
-            self.camera = camera
-            camera.position = CGPoint(x: self.size.width / 2, y: spider.position.y + 400)
-            let moveForward = SKAction.moveBy(x: 0, y: 50, duration: 1.0)
-            camera.run(SKAction.repeatForever(moveForward))
-            addChild(camera)
+            //RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
+            if let player = self.childNode(withName: "player1"){
+                
+            
+            if let camera = self.childNode(withName: "follow"){
+            
+            camera.position = CGPoint(x: player.position.x, y: player.position.y + 100)
+            }
+            }
             /* Setup your scene here */
             
 //            let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
@@ -92,7 +98,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     override func update(_ currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
-       
+        if let playerSpider = self.childNode(withName: "player1"){
+        
+        
+        if let cam = self.childNode(withName: "follow"){
+       cam.position = CGPoint(x: playerSpider.position.x, y: playerSpider.position.y + 100)
+        }
+        }
 //        if let playerOne = self.childNode(withName: "player1"){
 //           playerOne.position.y += 1
 //            if let cam = self.childNode(withName: "follow"){
@@ -108,7 +120,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 case UISwipeGestureRecognizerDirection.right:
                     if let playerOne = self.childNode(withName: "player1"){
                     
-                    playerOne.position = CGPoint(x: playerOne.position.x + 20, y: playerOne.position.y)
+                    playerOne.position = CGPoint(x: playerOne.position.x + 50, y: playerOne.position.y)
+                        let myaction = SKAction.rotate(toAngle: (3 * CGFloat.pi) / 2, duration: 0.0)
+                        playerOne.run(myaction)
                     }
                     
                     print("Swiped right")
@@ -116,7 +130,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 case UISwipeGestureRecognizerDirection.down:
                     if let playerOne = self.childNode(withName: "player1"){
                         
-                        playerOne.position = CGPoint(x: playerOne.position.x, y: playerOne.position.y - 32)
+                        playerOne.position = CGPoint(x: playerOne.position.x, y: playerOne.position.y - 50)
+                        let myaction = SKAction.rotate(toAngle: CGFloat.pi, duration: 0.0)
+                        playerOne.run(myaction)
                     }
                     
                     print("Swiped down")
@@ -124,14 +140,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 case UISwipeGestureRecognizerDirection.left:
                     if let playerOne = self.childNode(withName: "player1"){
                         
-                        playerOne.position = CGPoint(x: playerOne.position.x - 20, y: playerOne.position.y)
+                        playerOne.position = CGPoint(x: playerOne.position.x - 50, y: playerOne.position.y)
+                        let myaction = SKAction.rotate(toAngle: CGFloat.pi/2, duration: 0.0)
+                        playerOne.run(myaction)
                     }
                     print("Swiped left")
                     
                 case UISwipeGestureRecognizerDirection.up:
                     if let playerOne = self.childNode(withName: "player1"){
                         
-                        playerOne.position = CGPoint(x: playerOne.position.x, y: playerOne.position.y + 8)
+                        playerOne.position = CGPoint(x: playerOne.position.x, y: playerOne.position.y + 50)
+                        let myaction = SKAction.rotate(toAngle: 0, duration: 0.0)
+                        playerOne.run(myaction)
                     }
                     print("Swiped up")
                 
@@ -151,41 +171,41 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             speed = 0
         }
     }
-    func spawnObstacle(timer: Timer) {
-        if spider.isHidden {
-            timer.invalidate()
-            return
-        }
-        
-        let spriteGenerator = GKShuffledDistribution(lowestValue: 1, highestValue: 3)
-        let obstacle = SKSpriteNode(imageNamed: "obstacle\(spriteGenerator.nextInt())")
-        obstacle.xScale = 0.15
-        obstacle.yScale = 0.15
-  
-        let physicsBody = SKPhysicsBody(circleOfRadius: 100)
-        physicsBody.contactTestBitMask = 0x00000001
-        physicsBody.pinned = true
-        physicsBody.allowsRotation = false
-        obstacle.physicsBody = physicsBody
-        
-        let center = size.width/2.0, difference = CGFloat(360.0)
-        var x: CGFloat = 0
-        
-        let laneGenerator = GKShuffledDistribution(lowestValue: 1, highestValue: 3)
-        switch laneGenerator.nextInt() {
-        case 1:
-            x = center - difference
-        case 2:
-            x = center + difference/2
-        case 3:
-            x = center + difference
-        default:
-            fatalError("Number outside of [1, 3] generated")
-        }
-        
-        obstacle.position = CGPoint(x: x, y: self.spider.position.y + 900)
-        addChild(obstacle)
-    }
+//    func spawnObstacle(timer: Timer) {
+//        if spider.isHidden {
+//            timer.invalidate()
+//            return
+//        }
+//        
+//        let spriteGenerator = GKShuffledDistribution(lowestValue: 1, highestValue: 3)
+//        let obstacle = SKSpriteNode(imageNamed: "obstacle\(spriteGenerator.nextInt())")
+//        obstacle.xScale = 0.15
+//        obstacle.yScale = 0.15
+//  
+//        let physicsBody = SKPhysicsBody(circleOfRadius: 100)
+//        physicsBody.contactTestBitMask = 0x00000001
+//        physicsBody.pinned = true
+//        physicsBody.allowsRotation = false
+//        obstacle.physicsBody = physicsBody
+//        
+//        let center = size.width/2.0, difference = CGFloat(360.0)
+//        var x: CGFloat = 0
+//        
+//        let laneGenerator = GKShuffledDistribution(lowestValue: 1, highestValue: 3)
+//        switch laneGenerator.nextInt() {
+//        case 1:
+//            x = center - difference
+//        case 2:
+//            x = center + difference/2
+//        case 3:
+//            x = center + difference
+//        default:
+//            fatalError("Number outside of [1, 3] generated")
+//        }
+//        
+//        obstacle.position = CGPoint(x: x, y: self.spider.position.y + 900)
+//        addChild(obstacle)
+//    }
     
 
 }

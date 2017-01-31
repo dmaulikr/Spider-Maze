@@ -14,6 +14,7 @@
 		22616DFA1E32DA0A0011422B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22616DF91E32DA0A0011422B /* GameViewController.swift */; };
 		22616DFD1E32DA0B0011422B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22616DFB1E32DA0B0011422B /* Main.storyboard */; };
 		22616DFF1E32DA0E0011422B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22616DFE1E32DA0E0011422B /* Assets.xcassets */; };
+		2282F36C1E400F15006FFDC0 /* Tiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2282F36B1E400F15006FFDC0 /* Tiles.sks */; };
 		22C388BD1E343FCE00831678 /* blackSpider.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 22C388BC1E343FCE00831678 /* blackSpider.atlas */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		22616DFC1E32DA0B0011422B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22616DFE1E32DA0E0011422B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22616E001E32DA0E0011422B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2282F36B1E400F15006FFDC0 /* Tiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tiles.sks; sourceTree = "<group>"; };
 		22C388BC1E343FCE00831678 /* blackSpider.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = blackSpider.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +65,7 @@
 				22C388BC1E343FCE00831678 /* blackSpider.atlas */,
 				22616DEF1E32DA070011422B /* AppDelegate.swift */,
 				22616DF11E32DA070011422B /* GameScene.sks */,
+				2282F36B1E400F15006FFDC0 /* Tiles.sks */,
 				22616DF51E32DA090011422B /* Game.xcassets */,
 				22616DF71E32DA0A0011422B /* GameScene.swift */,
 				22616DF91E32DA0A0011422B /* GameViewController.swift */,
@@ -136,6 +139,7 @@
 				22C388BD1E343FCE00831678 /* blackSpider.atlas in Resources */,
 				22616DF21E32DA070011422B /* GameScene.sks in Resources */,
 				22616DF61E32DA090011422B /* Game.xcassets in Resources */,
+				2282F36C1E400F15006FFDC0 /* Tiles.sks in Resources */,
 				22616DFD1E32DA0B0011422B /* Main.storyboard in Resources */,
 				22616DFF1E32DA0E0011422B /* Assets.xcassets in Resources */,
 			);
