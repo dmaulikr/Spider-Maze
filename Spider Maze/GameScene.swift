@@ -37,6 +37,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         override func didMove(to view: SKView) {
             physicsWorld.contactDelegate = self
+            setUpControllerObservers()
+            connectControllers()
 //            if let goal = self.childNode(withName: "goal"){
 //            let goalCategory = goal.physicsBody?.contactTestBitMask
 //            
@@ -77,21 +79,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 //            swipeDown.direction = .down
 //            view.addGestureRecognizer(swipeDown)
             
-                    let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
-                    swipeRight.direction = UISwipeGestureRecognizerDirection.right
-                    self.view!.addGestureRecognizer(swipeRight)
+  //                  let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+    //                swipeRight.direction = UISwipeGestureRecognizerDirection.right
+      //              self.view!.addGestureRecognizer(swipeRight)
             
-                    let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
-                    swipeDown.direction = UISwipeGestureRecognizerDirection.down
-                    self.view!.addGestureRecognizer(swipeDown)
+        //            let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+          //          swipeDown.direction = UISwipeGestureRecognizerDirection.down
+            //        self.view!.addGestureRecognizer(swipeDown)
             
-                    let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
-                    swipeLeft.direction = UISwipeGestureRecognizerDirection.left
-                    self.view!.addGestureRecognizer(swipeLeft)
+              //      let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+                //    swipeLeft.direction = UISwipeGestureRecognizerDirection.left
+                  //  self.view!.addGestureRecognizer(swipeLeft)
             
-                    let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
-                    swipeUp.direction = UISwipeGestureRecognizerDirection.up
-                    self.view!.addGestureRecognizer(swipeUp)
+    //                let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
+      //              swipeUp.direction = UISwipeGestureRecognizerDirection.up
+        //            self.view!.addGestureRecognizer(swipeUp)
 
             
             

@@ -15,6 +15,7 @@
 		22616DFD1E32DA0B0011422B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22616DFB1E32DA0B0011422B /* Main.storyboard */; };
 		22616DFF1E32DA0E0011422B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22616DFE1E32DA0E0011422B /* Assets.xcassets */; };
 		2282F36C1E400F15006FFDC0 /* Tiles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2282F36B1E400F15006FFDC0 /* Tiles.sks */; };
+		22907F271E419C890012C98B /* GameScene_GameControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22907F261E419C890012C98B /* GameScene_GameControllers.swift */; };
 		22C388BD1E343FCE00831678 /* blackSpider.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 22C388BC1E343FCE00831678 /* blackSpider.atlas */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		22616DFE1E32DA0E0011422B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22616E001E32DA0E0011422B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2282F36B1E400F15006FFDC0 /* Tiles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tiles.sks; sourceTree = "<group>"; };
+		22907F261E419C890012C98B /* GameScene_GameControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene_GameControllers.swift; sourceTree = "<group>"; };
 		22C388BC1E343FCE00831678 /* blackSpider.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = blackSpider.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 				2282F36B1E400F15006FFDC0 /* Tiles.sks */,
 				22616DF51E32DA090011422B /* Game.xcassets */,
 				22616DF71E32DA0A0011422B /* GameScene.swift */,
+				22907F261E419C890012C98B /* GameScene_GameControllers.swift */,
 				22616DF91E32DA0A0011422B /* GameViewController.swift */,
 				22616DFB1E32DA0B0011422B /* Main.storyboard */,
 				22616DFE1E32DA0E0011422B /* Assets.xcassets */,
@@ -154,6 +157,7 @@
 			files = (
 				22616DF81E32DA0A0011422B /* GameScene.swift in Sources */,
 				22616DFA1E32DA0A0011422B /* GameViewController.swift in Sources */,
+				22907F271E419C890012C98B /* GameScene_GameControllers.swift in Sources */,
 				22616DF01E32DA070011422B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
